@@ -14,8 +14,13 @@
                             </form>
                         </div>
                     </div> --}}
+<<<<<<< HEAD
                 </div> 
 
+=======
+                </div>
+@auth
+>>>>>>> ac37d0b2 (pertemuan-12)
                 <ul class="navbar-nav header-right">
                     {{-- <li class="nav-item dropdown notification_dropdown">
                         <a class="nav-link" href="#" role="button" data-toggle="dropdown">
@@ -85,6 +90,7 @@
                             <i class="mdi mdi-account"></i>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
+<<<<<<< HEAD
                             {{-- <a href="./app-profile.html" class="dropdown-item">
                                 <i class="icon-user"></i>
                                 <span class="ml-2">Profile </span>
@@ -93,6 +99,12 @@
                                 <i class="icon-envelope-open"></i>
                                 <span class="ml-2">Inbox </span>
                             </a> --}}
+=======
+                        <a href="{{ route('users.profile', auth()->user()->id)}}" class="dropdown-item">
+                                <i class="icon-user"></i>
+                                <span class="ml-2">Profil </span>
+                            </a>
+>>>>>>> ac37d0b2 (pertemuan-12)
                             <a href="{{route('auth.logout')}}" class="dropdown-item">
                                 <i class="icon-key"></i>
                                 <span class="ml-2">Logout </span>
@@ -100,7 +112,16 @@
                         </div>
                     </li>
                 </ul>
+<<<<<<< HEAD
             </div>
+=======
+                @else
+                <div class="header-leaft">
+                    <a href="{{(route('auth.login'))}}" class="btn btn-primary">login</a>
+            </div>
+            @endauth
+                    </div>
+>>>>>>> ac37d0b2 (pertemuan-12)
         </nav>
     </div>
 </div>

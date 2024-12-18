@@ -22,16 +22,30 @@ class EventServiceProvider extends ServiceProvider
 
     /**
      * Register any events for your application.
+<<<<<<< HEAD
      */
     public function boot(): void
+=======
+     *
+     * @return void
+     */
+    public function boot()
+>>>>>>> ac37d0b2 (pertemuan-12)
     {
         //
     }
 
     /**
      * Determine if events and listeners should be automatically discovered.
+<<<<<<< HEAD
      */
     public function shouldDiscoverEvents(): bool
+=======
+     *
+     * @return bool
+     */
+    public function shouldDiscoverEvents()
+>>>>>>> ac37d0b2 (pertemuan-12)
     {
         return false;
     }

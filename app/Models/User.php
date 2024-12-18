@@ -18,8 +18,12 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
+<<<<<<< HEAD
         'name',
         'email',
+=======
+        'username',
+>>>>>>> ac37d0b2 (pertemuan-12)
         'password',
     ];
 
@@ -40,9 +44,28 @@ class User extends Authenticatable
      */
     protected $casts = [
         'email_verified_at' => 'datetime',
+<<<<<<< HEAD
         'password' => 'hashed',
     ];
     public function roles(){
         return $this->belongsToMany(Role::class);
     }
+=======
+    ];
+
+
+    public function roles() {
+        return $this->belongsToMany(Role::class);
+    }
+
+    public function rentalMobil()
+    {
+        return $this->hasOne(RentalMobil::class);
+    }
+
+    public function konsumen()
+    {
+        return $this->hasOne(Konsumen::class);
+    }
+>>>>>>> ac37d0b2 (pertemuan-12)
 }

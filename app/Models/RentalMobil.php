@@ -8,5 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class RentalMobil extends Model
 {
     use HasFactory;
+<<<<<<< HEAD
     protected $guarded = [];
 }
+=======
+    
+    protected $guarded = [];
+
+    
+}
+>>>>>>> ac37d0b2 (pertemuan-12)

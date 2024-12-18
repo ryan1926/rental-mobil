@@ -5,10 +5,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+<<<<<<< HEAD
     <title>Rental mobil - register </title>
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="{{asset('assets/images/favicon.png')}}">
     <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
+=======
+    <title>Rental Mobil - Register </title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="{{asset('assets/images/favicon.png')}}">
+    <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
+
+>>>>>>> ac37d0b2 (pertemuan-12)
 </head>
 
 <body class="h-100">
@@ -21,6 +29,7 @@
                             <div class="col-xl-12">
                                 <div class="auth-form">
                                     <h4 class="text-center mb-4">Sign up your account</h4>
+<<<<<<< HEAD
                                     <form action="index.html">
                                         <div class="form-group">
                                             <label><strong>Username</strong></label>
@@ -33,13 +42,39 @@
                                         <div class="form-group">
                                             <label><strong>Password</strong></label>
                                             <input type="password" class="form-control" value="Password">
+=======
+                                    <form action="{{route('auth.register')}}" method="post">
+                                        @csrf
+                                        <div class="form-group">
+                                            <label><strong>Username</strong></label>
+                                            <input type="text" class="form-control" name="username" 
+                                                placeholder="username" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label><strong>Role</strong></label>
+                                            <select name="role_id" id="role" class="form-control">
+                                                <option value="">Pilih Role!</option>
+                                                @foreach ($roles as $item)
+                                                    <option value="{{$item->id}}">{{$item->nama_role}}</option>
+                                                @endforeach
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label><strong>Password</strong></label>
+                                            <input type="password" class="form-control" name="password" required>
+>>>>>>> ac37d0b2 (pertemuan-12)
                                         </div>
                                         <div class="text-center mt-4">
                                             <button type="submit" class="btn btn-primary btn-block">Sign me up</button>
                                         </div>
                                     </form>
                                     <div class="new-account mt-3">
+<<<<<<< HEAD
                                         <p>Already have an account? <a class="text-primary"  href="{{ route('auth.login')}}">Sign in</a></p>
+=======
+                                        <p>Already have an account? <a class="text-primary" 
+                                            href="{{ route('auth.login')}}">Sign in</a></p>
+>>>>>>> ac37d0b2 (pertemuan-12)
                                     </div>
                                 </div>
                             </div>
